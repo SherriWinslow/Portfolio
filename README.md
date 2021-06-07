@@ -1,7 +1,7 @@
-# Type Name Here
+# Sherri Winslow - Portfolio
 
 ## Description
-xxx
+Portfolio of Coding Projects of Sherri Winslow
 
 ## Badges
 N/A
@@ -20,7 +20,7 @@ Contact:  Sherri Winslow
 Email:  sherriwinslow@msn.com
 
 ## Roadmap
-Single release for Class purposes and Portfolio only.
+Single release for Portfolio and Educational Purposes only.
 
 ## Contributing
 Although, contributions are not allowed, at this time.  You may send any feedback on the code to sherriwinslow@msn.com.
@@ -29,4 +29,4 @@ Although, contributions are not allowed, at this time.  You may send any feedbac
 I would like to express my appreciation to the Instructors, TAs and my Tutor at UConn Coding BootCamp.
 
 ## License
-For learning purposes and Portfolio use.
+For Portfolio and Educational use only.  No outside changes allowed to this file.
