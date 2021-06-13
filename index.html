@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+a
 
 <head>
   <meta charset="UTF-8">
@@ -9,12 +10,10 @@
 
 <body>
 
-  <!-- navigation -->
+  <!-- header with navigation -->
   <header>
     <h1>
-      <a href="/">
-        Sherri Winslow
-      </a>
+      <a href="https://www.linkedin.com/in/sherri-winslow-67530658/">Sherri Winslow</a>
     </h1>
 
     <nav>
@@ -23,13 +22,13 @@
         <!-- List item element-->
         <li>
           <!-- Anchor element -->
-          <a href=#About">About Me</a>
+          <a href=#bio>About Me</a>
         </li>
         <li>
-          <a href=#Portfolio>Portfolio</a>
+          <a href=#work>My Portfolio</a>
         </li>
         <li>
-          <a href=#Contact>Contact Me</a>
+          <a href=#contact-me>Contact Me</a>
         </li>
       </ul>
     </nav>
@@ -38,7 +37,7 @@
 
   <!-- hero -->
   <figure class="hero">
-    <img src="assets/images/S-Winslow2.jpg" alt="Sherri looking up and right toward the future">
+    <img src="assets/images/S-Winslow2.jpg" alt="Sherri looking up and to left of screen, looking toward the future">
 
     <h2>Your Future Is Valued Here!</h3>
 
@@ -47,71 +46,118 @@
   <!-- "about me" section -->
 
   <section class="intro">
-    <h2 class="section-title primary-border">About Me</h2>
+    <h2 id="bio" class="section-title primary-border">About Me</h2>
     <P>
-      Currently, as student at the University of Connecticut's Coding BootCamp for Full-Stack Web
-      Developers, I look forward to completing my program in early November. My goal is to utilize my skills to help
+      As a student at the University of Connecticut's Coding BootCamp for Full-Stack Web
+      Developers, I look forward to completing my program in early November 2021. My goal is to utilize my skills to
+      help
       Businesses, both large and small, develop a web-presence that will increase visibility and profits, meet or
       exceed current standards and keep up with future trends. Organizational and Communications skills
       are of key importance for success, Having worked in a variety of industries, and being a small business owner
-      myself, I feel that I can connect with most businesses and have a working knowledge and understanding to dicuss
+      myself, I feel that I can connect with most businesses and have a working knowledge to understand and dicuss
       their needs.
+      <br>
+      <br>
+      When I am not working, I enjoy spending time with my husband, two fur-babies (dogs), two daughters, five
+      grand-children, and a 2021-model great-grandson. My interests include: computers (of course), photography, music -
+      instrumental and singing, martial arts, outdoor activities, travel and marksmanship activities.
+      <br>
+      <br>
+      Having started working with computers in 1980, I enjoy technology, design, and learning new skills. I hope to work
+      with you soon to further develop your business.
     </p>
+    <BR>
+    <BR>
+    <BR>
   </section>
 
-  <main id="portfolio" class="project-items">
 
-    <!-- "Portfolio" section -->
-    <section class="projects-item1">
-      <h3>Item 1</h3>
-        <a href="https://via.placeholder.com/250"></a>
-
-      <div>
-      Lorem espom
+  <!--Main Section - location of Portfolio -->
+  <main>
+    <h2 id="work" class="secondary-border">My Portfolio</h2>
+    <section>
+      <h3>Code Refactor & Update</h3>
+      <div class="flex-container">
+        <div class=flex-item1">
+          <a href="https://sherriwinslow.github.io/Code-Refactor/">
+            <img src="assets/images/Code-Refactor-952x514.jpg"
+              alt="Horiseon website with Teal navigation banner, two men and one woman sitting at a table, with a laptop, papers, & pens; and one man stancing.  Everyone is looking at a paper on table;.  There is a white-board behind the man standing">
+          </a>
+          <p>
+            This project was to review the code for a pre-existing website, improve SEO and Accessibility, and update
+            the
+            code including: Semantic tags, image descriptions, removing redundancies and meeting current standards for
+            coding and responsive design.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section class="projects-item2">
-      <h3>Item 2</h3>
-        <a href="https://via.placeholder.com/250" alt="gray box placeholder for future image"></a>
-
-      <div>
-        This is Item 2
+    <section>
+      <h3>Upcoming Project</h3>
+      <div class="flex-container">
+        <div class=flex-item">
+          <!-- <a href="url here"> -->
+          <img src="assets/images/gray-placeholder-420x227.jpg"
+            alt=="A Gray space-holder image with black letters that says, Your Next Website Here, in 3 different size fonts.">
+          <p>
+            Coming Soon!
+          </p>
+        </div>
       </div>
     </section>
 
+    <section>
+      <h3>Upcoming Project</h3>
+      <div class="flex-container">
+        <div class=flex-item">
+          <!-- <a href="url here"> -->
+          <img src="assets/images/gray-placeholder-420x227.jpg"
+            alt=="A Gray space-holder image with black letters that says, Your Next Website Here, in 3 different size fonts.">
+          <p>
+            Coming Soon!
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <section>
+    <!-- white space -->
+  </section>
+
   <!-- "Contact" section -->
-  <section  class = "contact">
-    <h2 class="section-title secondary-border">Contact Information</h2>
+  <section class="contact">
+    <h2 id="contact-me" class="section-title tertiary-border">Contact Information</h2>
     <div class="contact-info">
       <div>
-        <h3>Sherri Winslow <Meta:vp></Meta:vp>
-        </h3>
-        <p>
-          Are you interested in Building a Web Presence? &nbsp Does your Current Site Need a Face-lift? &nbsp
-          Maintenance issues or Other Problems?
-          <br />
-          Let me know and I'll be happy to talk to you!
+        <h3>Sherri Winslow</h3>
+        <p id="infop">
+          Are you Interested in Building a Web Presence? &nbsp Does your Current Site Need a Face-Lift? &nbsp
+          Maintenance Issues or Other Problems?
+          <br>
+          <br>
+          Contact Me and I'll be Happy to Discuss Your Needs!
         </p>
-
-        LinkedIn: <a href="https://www.linkedin.com/in/sherri-winslow-67538658/">Sherri Winslow</a>
         <br>
-        Email: <a href="mailto: " sherri@sherriwinslow.com">Sherri@SherriWinslow.com</a>
-        <br>
-        Website/Facebook: <a href="https://www.sherriwinslow.com">SherriWinslow.com</a>
-        <br>
-        Website Under Construction ... Coming Soon!
-
+        <address>
+          LinkedIn: <a href="https://www.linkedin.com/in/sherri-winslow-67538658/">Sherri Winslow</a>
+          <br>
+          Email: <a href="mailto: " sherri@sherriwinslow.com">Sherri@SherriWinslow.com</a>
+          <br>
+          Website/Facebook: <a href="https://www.sherriwinslow.com">SherriWinslow.com</a>
+          <br>
+          Website Under Construction ... Coming Soon!
+        </address>
       </div>
     </div>
   </section>
 
   <!-- footer -->
   <footer>
-    <div>
+    <section>
       &copy; 2021 SherriWinslow.com &nbsp; All rights reserved.
-    </div>
+    </section>
   </footer>
 </body>
 

@@ -1,4 +1,4 @@
-
+/* GLOBAL STYLES START */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,39 +10,32 @@
     --secondary-color: black;
     --tertiary-color:  white;
     --quaternary-color:  #696969;
-
-    --primary-color-transparent: rgb(216, 191, 118);
-    --secondary-color-transparent: rgb(105, 105, 105);
   }
-  
+    /* GLOBAL STYLES END */
+
+    
+  /* BODY STYLES START */
   body {
-    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
   }
   
+  /* HEADER & NAVIGATION STYLES START */
   header {
     padding: 20px 35px;
-    background-image: url('../images/black-background.jpg');
+    background-color: var(--secondary-color);
     background-position: 80%;
     background-attachment:fixed;
     background-size: cover;
-    /* 2.2 - added flex and removed inline / float properties from h1 and nav */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position:sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 9999;
   }
   
   header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
-    color: var(--primary-color);
-    text-shadow: 0px 0 15px rgba(0, 0, 0, 0.5);
+    font-size: 2.00vw;
   }
   
   header a {
@@ -78,81 +71,11 @@
     border-radius: 15px;
     text-shadow:none;
   }
-  
-  /* FOOTER STYLES START */
-  footer {
-    background: var(--secondary-color);
-    padding: 40px 35px;
-    color: var(--primary-color);
-    width: 100%;
-  }
-  
-  footer div {
-    line-height: 1.5;
-    text-align: center;
-  }
-  
-  /* END FOOTER STYLES */
-  
+  /* HEADER & NAVIGATION STYLES END */
+
   /* STYLE ALL SECTION TAGS */
-
   section {
-    padding: 60px;
-  }
-  
-  /* END ALL SECTION TAGS */ 
-
-  /* HERO STYLES START */
-  
-  .hero {
-    padding: 20px 35px;
-    background-image: url('../images/hero-background.jpeg');
-    background-position: 80%;
-    background-attachment:fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position:sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 9999;
-  }
-
-  figure h2 {
-    width: 75%;
-    text-align: right;
-    margin: 3.5%;
-   /* color: black;
-   font-size: 18px;
-    line-height: 1.3;*/
-    font-style: italic;
-    font-size: 55px;
-    color: var(--primary-color);
-    line-height: 1.2;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
-  
-
-  
-  /* HERO STYLES END */
-  
-  /* SECTION TITLE STYLES START */
-
-  .project-items {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-  }
-  .projects {
-    color: pink;
-    width: 50%;
-    flex-direction: row;
-  }
-
-  .projects-item1 {
-    width: 100%;
+    padding: 50px;
   }
 
   .section-title {
@@ -164,19 +87,41 @@
     color: var(--secondary-color);
     text-align: center;
   }
-  
+  /* END ALL SECTION TAGS */ 
+
+  /* INTRO STYLE STARTS */
   .primary-border {
-    border-color: var(--primary-color);
+     border-color: var(--primary-color);
   }
   
-  .secondary-border {
-    border-color: var(--tertiary-color);
+
+  /* HERO STYLES START */
+  .hero {
+    padding: 5%;
+    background-image: url('../images/hero-background.jpeg');
+    background-position: 80%;
+    background-attachment:fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
-  /* SECTION TITLE STYLES END */
-  
-  /* INTRO STYLES START */
-  
-  .intro p {
+
+  figure h2 {
+    width: 75%;
+    text-align: right;
+    margin: 3.5%;
+    font-style: italic;
+    font-size: 55px;
+    color: var(--quaternary-color);
+    line-height: 1.2;
+    text-shadow: black);
+  }
+  /* HERO STYLES END */
+
+   /* INTRO STYLES START */
+   .intro p {
     line-height: 1.25;
     color: var(--secondary-color);
     width: 90%;
@@ -185,67 +130,104 @@
     text-align: justify;
   }
   /* INTRO STYLES END */
-  
-  /* FLEX STYLES START */
-
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
+   
+  /* MAOM STYLES START */
+  main {
+    background-color: var(--primary-color);
+    width: 65%;
+    padding: 20px
+    padding-top: 25px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+
+  main h2 {
+    padding-top: 2%;
+    font-size: 48px;
+    padding-bottom: 20px;
+    width: 50%;
+    border-bottom: 3px solid;
+    margin: 0 auto 35px auto;
+    color: var(--secondary-color);
+    text-align: center;
+  }
+ 
+  .secondary-border {
+    border-color: var(--secondary-color);
+  }
+
+main section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flex-item {
+  width: 45%;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item1 {
+  width: 100%;
+  height: 100%;
+  flex: 0 100%;
+  display: flex;
+  flex-wrap: auto;
+  width: 65%;
+  margin-left: auto
+  margin-right: auto
+
+
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+
   .flex-item-left {
-    flex: 50%;
+    flex: 45%;
   }
   
   .flex-item-right {
-    flex: 50%;
+    flex: 45%;
   }
-  
-  /* FLEX STYLES END */
-
-  /* Responsive layout - makes a one column layout instead of a two-column layout */
-  @media (max-width: 800px) {
-    .flex-item-right, .flex-item-left {
-      flex: 100%;
-    }
-  }
-  /* PORTFOLIO STYLES START */
-  .portfolio {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .portfolio {
-    margin: 20px;
-    flex: 1;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-  }
-  
-  .portfolio img {
-    width: 100%;
-  }
-  
- /*PORTFOLIO STYLES END *
+}
+  /* MAIN SECTION STYLES END */
  
-  
-  /* CONTACT STYLES START */
+   /* CONTACT STYLES START */
   .contact {
     background: var(--quaternary-color);
+  
   }
   
   .contact h2 {
     color: var(--primary-color);
   }
-  
+  .tertiary-border {
+    border-color: var(--tertiary-color);
+  }
+
   .contact-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: left;
+    text-align: center;
   }
   
   .contact-info > * {
@@ -277,33 +259,35 @@
     color: var(--primary-color);
   }
   
-  
+  #infop {
+    font-size: larger;
+  }
   /* CONTACT STYLES END */
   
-  /* UTILITIES */
-  .flex-row {
-    display: flex;
+  /* FOOTER STYLES START */
+  footer {
+    background: var(--secondary-color);
+    padding: 5px 5px;
+    color: var(--primary-color);
+    width: 100%;
   }
   
-  .text-left {
-    text-align: left;
+  footer section {
+    line-height: 1.5;
+    text-align: center;
+    padding: 10px;
   }
-  
-  .text-right {
-    text-align: right;
+  /* END FOOTER STYLES *  
+
+  /* RESPONSIVE LAYOUT START - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+      width: 75%;
+    }
   }
-  
-  .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
+  /* RESPONSIVE LAYOUT END */
+
   /* 2.4 - MEDIA QUERIES FOR SMALL SCREENS TO TABLETS */
   @media screen and (max-width: 980px) {
     header {
@@ -326,14 +310,22 @@
       font-size: 20px;
     }
   
-    .hero-phrase {
+    .hero figure {
       width: 100%;
     }
   
-    .hero-phrase {
+    .hero figure {
       text-align: center;
     }
   
+    .project-items {
+      flex: 0 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    
+    }
   
     .contact-info iframe{
       flex: 1 100%;
@@ -357,29 +349,6 @@
       width: 100%;
     }
   
-    .step h3 {
-      flex: 1 100%;
-      text-align: center
-    }
-  
-    .step-info {
-      flex: 2 100%;
-      text-align: center;
-      justify-content: center;
-    }
-  
-    .step-img {
-      flex: 0 32%;
-      margin-right: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-  
-    .step-text {
-      flex: 100%;  
-    }
-  
-  
   /* 2.4 - MEDIA QUERIES FOR PHONE */
   @media screen and (max-width: 575px) {
     
@@ -392,10 +361,13 @@
       width: 100%;
     }
   
-    .portfolio {
+    .flex-container{
       flex: 0 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;    
     }
-  
     .contact-info > * {
       flex: 0 100%;
     }
