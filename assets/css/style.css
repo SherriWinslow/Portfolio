@@ -41,6 +41,7 @@
   header a {
     text-decoration: none;
     color: var(--primary-color);
+    font-weight: bold;
   }
   
   header nav {
@@ -121,6 +122,15 @@
   /* HERO STYLES END */
 
    /* INTRO STYLES START */
+
+   #bio span {
+    margin-top: auto;
+    width: 35%;
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+    padding: 10px 10px;
+    text-align: center;
+   }
    .intro p {
     line-height: 1.25;
     color: var(--secondary-color);
@@ -134,7 +144,7 @@
   /* MAOM STYLES START */
   main {
     background-color: var(--primary-color);
-    width: 65%;
+    width: 80%;
     padding: 20px
     padding-top: 25px;
     padding-bottom: 30px;
@@ -157,57 +167,68 @@
     border-color: var(--secondary-color);
   }
 
-main section {
+  main section {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.flex-container1 {
+/* flex parent */
+.flex-container {
+  /* create flex box */
   display: flex;
+  /* tells flexbox to break to next line if it runs over*/
   flex-wrap: wrap;
+  /* put all unused space between items */
   justify-content: space-between;
   width: 100%;
 }
 
+/* flex child */
 .flex-item {
+  /* make each elemtn specific width, 100% minus width is space between each element */
   width: 45%;
-  font-size: 22px;
-  font-weight: bold;
+ 
+  /* put space between each element vertically */
   margin-bottom: 15px;
+
+  /* see images folder */
+  background-image: url('../images/placeholder-420x227.png');
+
+  /* background to fit box no matter what */
   background-size: cover;
+
+  /* crop background at the center */
   background-position: center;
+
+  /* padding top and bottom first number, then left/right */
   padding: 20px 0;
+
+  /* set minimum heigh value */
   min-height: 250px;
+
+  /* flexbox and create column instead of row */
   display: flex;
   flex-direction: column;
+}
+
+/* for text area inside of flex item */
+.flex-item span {
+  /* element to bottom of flex item */
+  margin-top: auto;
+  width: 30%;
+  align-items: left;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  padding: 10px 5px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .flex-item1 {
   width: 100%;
   height: 100%;
-  flex: 0 100%;
-  display: flex;
-  flex-wrap: auto;
-  width: 65%;
-  margin-left: auto
-  margin-right: auto
-
-
-}
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-
-  .flex-item-left {
-    flex: 45%;
+  background-image: url('../images/Code-Refactor-952x514.jpg')
   }
-  
-  .flex-item-right {
-    flex: 45%;
-  }
-}
   /* MAIN SECTION STYLES END */
  
    /* CONTACT STYLES START */
