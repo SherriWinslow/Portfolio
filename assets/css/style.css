@@ -220,13 +220,12 @@
   margin-top: auto;
   width: 30%;
   align-items: left;
-  background-color: var(--quaternary-color);
   padding: 10px 5px;
   font-size: 20px;
   text-align: center; 
 }
 
-.flex-item span{
+.flex-item span {
   color: var(--primary-color);
   text-decoration: none;
 }
@@ -236,6 +235,10 @@
   height: 100%;
   background-image: url('../images/Code-Refactor-952x514.jpg')
   }
+
+.flex-item1 span {
+  background-color: var(--secondary-color);
+}
   /* MAIN SECTION STYLES END */
  
    /* CONTACT STYLES START */
